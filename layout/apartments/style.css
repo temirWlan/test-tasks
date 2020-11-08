@@ -6,7 +6,7 @@
 
 .container {
 	max-width: 1140px;
-	margin: 0 auto;
+	margin: 0 auto; 
 }
 
 .image-block img {
@@ -16,7 +16,7 @@
 
 .wrapper {
 	margin: 10% 0;
-}
+} 
 
 .wrapper__title {
 	font-size: 30px;
