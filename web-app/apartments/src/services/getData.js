@@ -1,11 +1,15 @@
-async function getData(url) {
-	const response = await fetch(url);
-
-	if (!response.ok) {
-		throw new Error();
+export default class SourceService {
+	constructor(url) {
+		this.url = url;
 	}
 
-	return await response.json();
-}
+	getData = async (url) => {
+		const response = await fetch(url);
 
-export default getData;
+		if (!response.ok) {
+			throw new Error();
+		}
+
+		return await response.json();
+	}
+};

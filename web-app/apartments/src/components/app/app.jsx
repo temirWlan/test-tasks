@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import getData from './services/getData';
-import CardList from './components/card-list';
-import data from './entities.json';
+import CardList from '../card-list';
+
 
 export default function App() {
   return (
@@ -12,7 +11,7 @@ export default function App() {
         <Title>
           Квартиры
         </Title>
-        <CardList items={data.response}/>
+        <CardList />
       </Container>
     </>
   );

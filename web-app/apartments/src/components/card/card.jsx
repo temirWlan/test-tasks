@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+
+import Like from '../like';
 
 import apartment from '../../assets/img/apartment.jpg';
 
 export default function Card(props) {
-	const [likeState, setLikeState] = useState(false);
-
 	const { 
 		type,
 		imgSrc,
@@ -30,14 +30,6 @@ export default function Card(props) {
 			}
 		}
 	} = props;
-
-	const onLike = e => {
-		e.preventDefault();
-
-		setLikeState(() => {
-			likeState = !likeState
-		});
-	};
 
 	return (
 		<Content data-type={type}>
@@ -85,6 +77,7 @@ export default function Card(props) {
 					</ListItem>
 				</DescriptionList>
 			</Description>
+			<Like/>
 		</Content>
 	)
 }
@@ -114,11 +107,12 @@ Card.defaultProps = {
 const Content = styled.div`
 	margin-top: 40px;
 	max-width: 300px;
-	height: 450px;
+	height: 500px;
 	padding-bottom: 25px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 	border-radius: 2%;
 	border: 1px solid #999;
 	transition: all 0.3s ease 0s;

@@ -1,24 +1,64 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+
+import { housesRequested, housesLoaded, housesRejected, uploadHouses } from '../../redux/actions';
 
 import Card from '../card';
 
 
-export default function CardList({ items }) {
+function CardList(props) {
+	useEffect(() => {
+		props.uploadHouses();
+	}, []);
+
 	return (
-		<List>
+		<>
+			<List>
+				{
+					props 
+						? props.houses.map(item => {
+							return (
+								<li key={item.id}> 
+									<Card {...item} />
+								</li>
+							)
+						})
+						: null
+				}
+			</List>
+		</>
+	)
+};
+
+
+/*
+	<List>
 			{
 				items.map(item => {
 					return <Card key={item.id} {...item} />
 				})
 			}
 		</List>
-	)
-};
+*/
+
+// export default function CardList({ items }) {
+// 	return (
+// 		<List>
+// 			{
+// 				items.map(item => {
+// 					return <Card key={item.id} {...item} />
+// 				})
+// 			}
+// 		</List>
+// 	)
+// };
 
 CardList.propTypes = {
-	items: PropTypes.array.isRequired
+	loading: PropTypes.bool,
+	houses: PropTypes.array,
+	error: PropTypes.bool
 };
 
 const List = styled.ul`
@@ -41,3 +81,15 @@ const List = styled.ul`
 		max-width: 100%;
 	}
 `;
+
+const mapStateToProps = ({ houses: { loading, houses, error } }) => ({ loading, houses, error });
+const mapDispatchToProps = dispatch => { 
+	return {
+		housesRequested, 
+		housesLoaded, 
+		housesRejected, 
+		uploadHouses: () => uploadHouses(dispatch)
+	}
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CardList);
