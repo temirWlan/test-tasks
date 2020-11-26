@@ -1,0 +1,60 @@
+{
+	"cardsData": [
+		{
+			"title": "Рюкзак Louis Vuitton Discovery", 
+			"ratio": "4.5", 
+			"imgSrc": "assets/img/bag.png", 
+			"alt": "bag", 
+			"price": "150 000 ₽"
+		},
+		{
+			"title": "Рюкзак Louis Vuitton Discovery", 
+			"ratio": "4.5", 
+			"imgSrc": "assets/img/bag.png", 
+			"alt": "bag", 
+			"price": "150 000 ₽"
+		},
+		{
+			"title": "Рюкзак Louis Vuitton Discovery", 
+			"ratio": "4.5", 
+			"imgSrc": "assets/img/bag.png", 
+			"alt": "bag", 
+			"price": "150 000 ₽"
+		},
+		{
+			"title": "Рюкзак Louis Vuitton Discovery", 
+			"ratio": "4.5", 
+			"imgSrc": "assets/img/bag.png", 
+			"alt": "bag", 
+			"price": "150 000 ₽"
+		},
+		{
+			"title": "Рюкзак Louis Vuitton Discovery", 
+			"ratio": "4.5", 
+			"imgSrc": "assets/img/bag.png", 
+			"alt": "bag", 
+			"price": "150 000 ₽"
+		},
+		{
+			"title": "Рюкзак Louis Vuitton Discovery", 
+			"ratio": "4.5", 
+			"imgSrc": "assets/img/bag.png", 
+			"alt": "bag", 
+			"price": "150 000 ₽"
+		},
+		{
+			"title": "Рюкзак Louis Vuitton Discovery", 
+			"ratio": "4.5", 
+			"imgSrc": "assets/img/bag.png", 
+			"alt": "bag", 
+			"price": "150 000 ₽"
+		},
+		{
+			"title": "Рюкзак Louis Vuitton Discovery", 
+			"ratio": "4.5", 
+			"imgSrc": "assets/img/bag.png", 
+			"alt": "bag", 
+			"price": "150 000 ₽"
+		}
+	] 
+}
