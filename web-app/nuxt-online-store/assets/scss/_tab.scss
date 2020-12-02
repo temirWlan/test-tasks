@@ -1,0 +1,21 @@
+.tab {
+  transition: all 0.5s ease 0s;
+
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  & a {
+    @include pt-regular;
+    font-size: 16px;
+    line-height: 21px;
+    color: $lightGray;
+    text-decoration: none;
+  }
+  &:hover a {
+    color: $gray
+  } 
+  &.active-tab a {
+    color: $dark;  
+  }
+}

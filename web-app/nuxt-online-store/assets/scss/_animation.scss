@@ -1,0 +1,17 @@
+@keyframes show {
+	from {
+		transform: translateX(120%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes hide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(120%);
+	}
+}

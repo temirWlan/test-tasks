@@ -1,0 +1,269 @@
+.sidebar {
+	width: 100%;
+	height: 100%;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	background-color: rgba(255, 255, 255, 0.8);
+	overflow-y: scroll;
+
+	&__dialog {
+		max-width: 460px;
+		min-height: 100%;
+		background: #fff; 
+		box-shadow: -4px 0px 16px rgba(0, 0, 0, 0.05);
+		border-radius: 8px 0px 0px 8px;
+	}
+
+	&__content {
+		width: 100%;
+		padding: 52px 48px; 
+		display: flex;
+		flex-direction: column; 
+	}
+
+	&__column {
+		margin-top: 24px;
+	}
+
+	&__row {
+		display: flex; 
+		justify-content: space-between; 
+		align-items: center;
+	}
+
+	&__title {
+		@include pt-bold;
+		font-size: 32px;
+		line-height: 41px;
+		color: #000;
+	}
+
+	&__close {
+		width: 24px;
+		height: 24px;
+		border: none ;
+		outline: none;
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		font-size: 36px;
+	}
+
+	&__text {
+		@include pt-regular;
+		font-size: 22px;
+		line-height: 28px;
+		color: #000;
+	}
+
+	&__btn {
+		margin-top: 24px;
+		display: inline-block;
+		width: 100%;
+		padding: 14px 0 15px 0;
+		background-color: $dark;
+		border-radius: 8px;
+		@include pt-regular;
+		font-size: 16px;
+		line-height: 21px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		transition: $slow; 
+		&:hover {
+			background-color: $gray;
+		}
+	}
+
+	&__caption {
+		@include pt-regular ;
+		font-size: 18px;
+		line-height: 23px;
+		color: $gray;
+	}
+
+	&__items {
+		margin-top: 16px;
+		display: flex;
+		flex-direction: column; 
+		align-items: center; 
+	}
+
+	&__item {
+		width: 100%;
+		padding: 12px 16px 12px 25px;
+		display: flex ;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #fff;
+		box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+		border-radius: 8px;
+		&:not(:first-child) {
+			margin-top: 12px;
+		}
+		&-image-block {
+			max-width: 70px; 
+			max-height: 90px;
+		}
+		&-description {
+			margin-left: 34px;
+			display: flex;
+			flex-direction: column; 
+			align-items: flex-start;
+		}
+		&-rating {
+			margin-top: 16px;
+		}
+		&-btn {
+			display: inline-block;
+			margin-left: 16px;
+			opacity: 0.4; 
+			transition: $slow;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__order-form {
+		margin-top: 33px;
+	}
+
+	&__form {
+		margin-top: 16px;
+		display: flex; 
+		flex-direction: column; 
+		align-items: center; 
+		&-field {
+			&::placeholder {
+				@include pt-regular;
+				font-size: 16px;
+				line-height: 21px;
+				color: $lightGray;
+			}
+		}
+		&-input {
+			padding: 14px 14px 15px 14px;
+			width: 100%;
+			background-color: #f8f8f8;
+			border-radius: 8px;
+			border: none;
+			outline: none;
+			font-size: 18px;
+			&:not(:first-child) {
+				margin-top: 16px;
+			}
+		}
+		&-btn {
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
+	}
+
+	&__box{
+		&-image-block {
+			max-width: 80px; 
+			max-height: 80px;
+		}
+		&-description {
+			text-align: center; 
+		}
+		&-title {
+			@include pt-bold;
+			font-size: 24px;
+			line-height: 31px;
+			color: #000;
+		}
+		&-text {
+			margin-top: 2px;
+			@include pt-regular;
+			font-size: 16px;
+			line-height: 21px;
+			color: $gray;
+		}
+	}
+}
+
+.thankyou-box {
+	margin-top: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.visible-cart {
+	display: flex;
+	& .sidebar__dialog {
+		animation-name: show; 
+		animation-duration: 0.8s;
+	}
+}
+
+.invisible-cart {	
+	display: none;
+	& .sidebar__dialog {
+		animation-name: hide; 
+		animation-duration: 0.5s;
+	}
+}
+
+
+@media (max-width: 992px) {
+	.sidebar {
+		background-color: rgba(255, 255, 255, 1);
+		&__dialog	{
+			min-width: 100%;
+			height: 100%;
+			box-shadow: none;
+		}
+		&__content {
+			padding: 52px 20%;
+		}
+		&__order-form {
+			width: 80%;
+			margin: 33px auto 0 auto;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.sidebar {
+		&__content {
+			padding: 52px 10%;
+		}
+		&__order-form {
+			width: 100%;
+		}
+		&__item {
+			&-description {
+				margin-left: 14px;
+			}
+			&-btn {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 460px) {
+	.sidebar {
+		min-height: 100%;
+		&__content {
+			padding: 52px 5%;
+		}
+		&__close {
+			width: 40px;
+			height: 40px;
+			font-size: 48px;
+		}
+	}
+}
+
