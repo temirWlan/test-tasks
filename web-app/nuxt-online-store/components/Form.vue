@@ -98,9 +98,12 @@ export default {
       this.$store.dispatch('form/addToUserData', JSON.stringify(obj));
       this.$store.dispatch('cart/setItems', []);
 
-      name.value = '';
-      phoneNumber.value = '';
-      address.value = '';
+      setTimeout(() => {
+        this.$store.commit('form/setSendStatus', false);
+        name.value = '';
+        phoneNumber.value = '';
+        address.value = '';
+      }, 5000);
     },
   },
 };

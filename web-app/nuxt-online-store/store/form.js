@@ -14,6 +14,9 @@ export const mutations = {
     state.userData = [...state.userData, data];
     state.isSent = true;
   },
+  setSendStatus(state, status) {
+    state.isSent = status;
+  },
 };
 
 export const getters = {
