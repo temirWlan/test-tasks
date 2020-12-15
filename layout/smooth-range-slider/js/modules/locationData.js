@@ -17,45 +17,42 @@ https://itrack.ru/portfolio/website/miratorg/
 */
 
 /* ['index', 'filter', 'project', 'nextPage'] */
-
-function determineType(str, option) {
-  const arr = Object.entries(option);
-  let type = '';
-      
-  for (let i = 0; i < arr.length; i++) {
-    if (str.toLowerCase().match(/arr[i][1]/)) {
-      type = arr[i][0];
-    } else {
-      type = 'index';
-    }
-  }
-  
-  return type;
+function matchByOption(str, optionObj) {
+  return Object.entries(optionObj).filter(option => str.toLocaleLowerCase().match(option[1]))
 }
-const types = {
-  filter: /filter/,
-  project: /project/,
-  nextPage: /pagen/
-};
-
-console.log(determineType('https://itrack.ru/portfolio/website/miratorg/filter', types));
-
 
 function getCurrentLocationData() {
-  const currentLocation = window.location.href;
+  // const currentLocation = window.location.href;
+  const currentLocation = 'https://itrack.ru/portfolio/vnedrenie-crm/';
   const types = {
-    
+    filter: /filter/,
+    project: /project/,
+    nextPage: /pagen/
   };
-  const data = {
-    
+  const directs = {
+    website: /website/,
+    crm: /crm/
   };
+  const sliceOption = {
+    from: 'filter/',
+    to: '/apply'
+  };
+  const from = currentLocation.indexOf(sliceOption.from) + sliceOption.from.length,
+        to = currentLocation.indexOf(sliceOption.to);
+
+
+  const matchedType = matchByOption(currentLocation, types),
+        matchedDirect = matchByOption(currentLocation, directs);
+  let filterParam = '';
+
+  const type = matchedType.length ? matchedType[0][0] : 'index',
+        direct = matchedDirect[0][0];
+
+  if (from !== -1 && to !== -1) {
+    filterParam = currentLocation.slice(from, to)
+  }
+
+  return [type, direct, filterParam];
 }
 
-
-
-
-
-
-export default function getCurrentLocationData() {
-  const currentLocation = window.location.href;
-}
+console.log(getCurrentLocationData());
