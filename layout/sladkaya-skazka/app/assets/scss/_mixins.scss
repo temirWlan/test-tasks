@@ -1,0 +1,10 @@
+/* fonts */
+@mixin mp-regular {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: normal;
+}
+
+@mixin mp-bold {
+	font-family: 'Myriad Pro', sans-serif;
+	font-weight: bold;
+}
