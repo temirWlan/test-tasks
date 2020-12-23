@@ -23,6 +23,7 @@ html, body {
 		align-items: center;
 		&:first-child {
 			justify-content: flex-start;
+			position: relative;
 		}
 		&:last-child {
 			justify-content: space-between;
@@ -33,6 +34,8 @@ html, body {
 	}
 	& .image-block {
 		margin-left: 75px;
+		min-width: 298px;
+		min-height: 52px;
 	}
 	&__menu {
 		margin-left: 250px;
@@ -56,6 +59,9 @@ html, body {
 			text-decoration: none;
 			white-space: nowrap;
 		}
+	}
+	&__search {
+		margin-left: 80px;
 	}
 	&__title {
 		margin: 0;
@@ -117,14 +123,15 @@ html, body {
 		}
 	}
 	&__list {
-		margin-left: 20px;
+		margin-left: 10px;
 		display: flex;
 		flex-direction: column;
 		list-style-type: none;
 	}
 	&__list-item {
-		margin-top: 26px;
 		padding-left: 20px;
+		display: flex;
+		align-items: center;
 		& a {
 			@include mp-regular;
 			font-size: 20px;
@@ -275,6 +282,7 @@ html, body {
 	&__row {
 		display: flex;
 		&:last-child {
+			margin-top: 29px;
 			margin-left: auto;
 			width: 89.5%;
 			align-items: flex-end;
@@ -321,13 +329,11 @@ html, body {
 		color: $lightBlue;
 	}
 	&__link {
+		display: inline-block;
 		@include mp-bold;
 		font-size: 16px;
 		line-height: 20px;
 		text-decoration: none;
-	}
-	& a {
-		display: inline-block;
 	}
 	&__phone-number {
 		&:not(:first-child) {
@@ -342,8 +348,19 @@ html, body {
 	}
 	& .row {
 		margin-left: auto;
+		& span {
+			font-size: 16px;
+		}
 	}
 }
 
+.active-category {
+	& a {
+		color: $blue;
+	}
+}
+
+
+@import '_media';
 
 

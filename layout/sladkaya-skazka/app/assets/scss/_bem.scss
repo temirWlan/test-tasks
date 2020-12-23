@@ -48,12 +48,11 @@
 	align-items: center;
 	width: 30px;
 	height: 19px;
-	position: relative;
 	& span {
 		width: 30px;
 		height: 3px;
 		background-color: $darkBlue;
-		position: absolute;
+		transition: $slow;
 	}
 	&:before, &:after {
 		content: '';
@@ -61,20 +60,26 @@
 		width: 30px;
 		height: 3px;
 		background-color: $darkBlue;
-		position: absolute;
+		transition: $slow;
 	}
 	&.active-burger {
-			&:before {
-				transform: rotate(45deg);
-			}
-			&:after {
-				transform: rotate(-45deg);
-			}
+		position: relative;
+		& span {
+			opacity: 0;
+		}
+		&:before, &:after {
+			position: absolute;		
+		}
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
 	}
 }
 
 .search {
-	margin-left: 80px;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -83,7 +88,6 @@
 		outline: none;
 		cursor: pointer;
 		background-color: transparent;
-		position: absolute;
 		left: 10px;
 	}
 	&__input {
@@ -93,13 +97,6 @@
 		border-radius: 10px;
 		background-color: transparent;
 		outline: none;
-	}
-}
-
-.active-category {
-	list-style-image: url('../img/icons/mark.svg');
-	& a {
-		color: $blue;
 	}
 }
 
@@ -243,6 +240,10 @@
 	}
 }
 
+.active-category {
+	list-style-image: url('../img/icons/mark.svg');
+}
+
 .color-light-blue {
 	color: $lightBlue;
 }
@@ -265,4 +266,77 @@
 
 .inline-block-visible {
 	display: inline;
+}
+
+@media (max-width: 1440px) {
+	.card {
+		& a {
+			height: 100%;
+		}
+		&__wrapper {
+			height: 100%;
+		}
+	}
+	.btn {
+		min-width: 270px;
+	}
+}
+
+@media (max-width: 1366px) {
+	.desc-text {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.btn {
+		padding: 16px 0;
+	}
+
+	.card {
+		& a {
+			height: 100%;
+		}
+		&__wrapper {
+			padding: 20px 20px 14px 20px;
+			height: 100%;
+		}
+		&__image-block {
+			max-width: 80%;
+   		min-height: 46%;
+   		max-height: 40%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.card-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 576px) {
+	.socials-list {
+		width: 80%;
+	}
+	.card-list {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
+
+	.card {
+		&__image-block {
+			max-width: 55%;
+		}
+		&__description {
+			margin-top: 10px;
+		}
+	}
+}
+
+@media (max-width: 460px) {
+	.slider-card {
+		&__container {
+			padding: 20px;	
+		}
+	}
 }

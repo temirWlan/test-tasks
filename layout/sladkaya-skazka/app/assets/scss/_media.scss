@@ -1,0 +1,429 @@
+@media (max-width: 1600px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1500px) {
+	.page {
+		&__slider {
+			min-width: 430px;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	html, body {
+		font-size: 15px;
+	}
+	.header {
+		&__row {
+			&:not(:first-child) {
+				margin-top: 9rem;
+			}
+		}
+	}
+	.header {
+		&__title {
+			font-size: 48px;
+    		line-height: 48px;
+		}
+		&__row {
+			&:first-child {
+				justify-content: space-between;
+			}
+			&:not(:first-child) {
+   			margin-top: 7rem;
+			}
+		}
+		& .image-block {
+			margin-left: 0;
+			max-width: 240px;
+			min-width: 200px;
+			min-height: 44px;
+		}
+		&__menu {
+			margin-left: 0;
+			&-list {
+				&-item {
+					& a {
+						font-size: 18px;
+   					line-height: 18px;
+					}
+				}
+			}
+		}
+		&__search {
+			margin-left: 0;
+		}
+	}
+	.footer {
+		&__row {
+			justify-content: space-between;
+		}
+		&__menu {
+			margin-left: 0;
+			flex: 0 0 35%;
+		}
+		&__socials {
+			margin-left: 0;
+			flex: 0 0 25%;
+		}
+		&__email {
+			margin-left: 0;
+		}
+		&__policy {
+			margin-left: 0;
+		}
+		& .row {
+			margin-left: 0;
+		}
+	}
+}
+
+@media (max-width: 1366px) {
+	html, body {
+		font-size: 14px;
+	}
+	.header {
+		&__menu {
+			&-list {
+				&-item {
+					&:not(:first-child) {
+						margin-left: 40px;
+					}
+				}
+			}
+		}
+	}
+	.page {
+		&__row {
+			&.slider-cards {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		&__slider:not(:first-child) {
+			margin-top: 30px;
+		   margin-left: 0;
+		}
+		&__column:last-child {
+   		margin-left: 30px;
+		}
+		&__list {
+			&-item {
+
+			}
+		}
+		&__card {
+			max-width: 300px;
+			min-height: 390px;
+		}
+	}
+	.footer {
+		&__row {
+			max-width: 90%;
+   		margin: 0 auto;
+   		&:last-child {
+   			margin-top: 10px;
+   		}
+		}
+		&__image-block {
+			display: none;
+		}
+		&__menu {
+			flex: 0 0 50%;
+			display: flex;
+   		align-items: center;
+			&-list {
+				width: 100%;
+				grid-template-columns: repeat(4, 1fr);
+			}
+		}
+		&__socials {
+			flex: 0 0 30%;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	html, body {
+		font-size: 12px;
+	}
+	.header {
+		&__menu {
+			&-list {
+				&-item {
+					&:not(:first-child) {
+						margin-left: 30px;
+					}
+					& a {
+						font-size: 16px;
+   					line-height: 16px;
+					}
+				}
+			}
+		}
+		&__title {
+			font-size: 40px;
+   		line-height: 40px;
+		}
+		&__breadcrumb {
+			& a {
+				font-size: 18px;
+   			line-height: 18px;
+			}
+		}
+	}
+	.page {
+		&__list {
+			margin-top: 10px;
+			&-item {
+				padding-left: 10px;
+				& a {
+					line-height: 30px;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	.footer {
+		&__menu {
+			flex: 0 0 60%;
+		}
+		&__socials {
+			flex: 0 0 35%;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	html, body {
+		font-size: 10px;
+	}
+	.header {
+		&__row {
+			&:first-child {
+				justify-content: flex-start;
+			}
+		}
+		& .image-block {
+			margin-left: 30px;
+		}
+		&__search {
+			margin-left: auto;
+		}
+		&__menu {
+			display: none;
+		}
+	}
+	.page {
+		&__row {
+			&.page__footer {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		&__columns {
+			position: relative;
+		}
+		&__column {
+			&:first-child {
+				display: none;
+				position: absolute;
+				border: 1px solid #999;
+				padding: 30px;
+				box-shadow: 3px 2px 3px #999;
+				border-radius: 10px;
+				background-color: #fff;
+				transform: translateX(-90%);
+			}
+			&:last-child {
+				margin-left: 0;
+   			width: 100%;
+			}
+		}
+		&__btns {
+			display: none;
+		}
+		&__dropdown {
+			margin-top: 20px;
+			max-width: 290px;
+			min-height: 48px;
+			&-trigger {
+				padding: 10px;
+			}
+		}
+		&__slider {
+			&:not(:first-child) {
+				margin-top: 20px;
+			}
+		}
+		&__card {
+			box-shadow: 0px 30px 50px #ededed;
+			background-color: #fff;
+			&:hover {
+				transform: scale(1);
+			}
+		}
+	}
+	.footer {
+		&__row {
+			&:last-child {
+				margin-top: 20px;
+				width: 100%;
+				flex-wrap: wrap;
+			}
+		}
+		&__menu {
+			&-list {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+		&__socials {
+			flex: 0 0 40%;
+		}
+		&__policy {
+			margin-top: 20px;
+			order: 2;
+			flex: 0 0 100%;
+			text-align: center;
+		}
+		&__description {
+			margin-top: 10px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		&__row {
+			max-width: 100%;
+			&:first-child {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		&__menu {
+			flex: 0 0 auto;
+   		width: 100%;
+   		&-list {
+   			grid-template-columns: repeat(4, 1fr);
+   		}
+		}
+		&__socials {
+			margin: 10px auto 0 auto;
+			width: 60%;
+			flex: 0 0 auto;
+			align-items: center;
+		}
+		&__description {
+			text-align: center;
+		}
+	}	
+}
+
+@media (max-width: 576px) {
+	html, body {
+		font-size: 8px;
+	}
+	.header {
+		&__wrapper {
+			padding: 14px 0 20px 0;
+		}
+		&__row {
+			&:not(:first-child) {
+				margin-top: 3rem;
+			}
+		}
+		&__title {
+			font-size: 32px;
+		}
+		&__breadcrumbs {
+			display: none;
+		}
+	}
+	.page {
+		&__card {
+			max-width: 320px;
+	   	max-height: 400px;
+	   	min-height: 390px;
+		}
+	}
+	.footer {
+		&__row {
+			&:last-child {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		&__menu {
+			display: none;
+		}
+		&__phone-number {
+			&:not(:first-child) {
+				margin-top: 5px;
+			}
+		}
+		&__email {
+			margin-top: 25px;
+		}
+		& .row {
+			margin-top: 25px;
+		}
+		&__link {
+			font-size: 18px;
+		}
+		&__description {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 460px) {
+	html, body {
+		font-size: 5px;
+	}
+	.header {
+		& .image-block {
+			max-width: 170px;
+   		min-width: 170px;
+   		min-height: 30px;
+		}
+	}
+	.page {
+		&__slider {
+			min-width: 100%;
+			&-row {
+				position: relative;
+				justify-content: center;
+			}
+			&-trigger {
+				color: transparent;
+				position: absolute;
+				right: 0;
+				cursor: default;
+				&:after {
+					cursor: pointer;
+				}
+			}
+		}
+		&__dropdown {
+			&-trigger {
+				padding: 10px 14px;
+				font-size: 18px;
+			}
+		}
+		&__select {
+			&-option {
+				font-size: 18px;
+			}
+		}
+	}
+	.footer {
+		&__socials {
+			width: 100%;
+		}
+	}
+}
