@@ -48,6 +48,8 @@
 	align-items: center;
 	width: 30px;
 	height: 19px;
+	z-index: 200;
+	transition: $slow;
 	& span {
 		width: 30px;
 		height: 3px;
@@ -68,7 +70,8 @@
 			opacity: 0;
 		}
 		&:before, &:after {
-			position: absolute;		
+			position: absolute;
+			background-color: #fff;		
 		}
 		&:before {
 			transform: rotate(45deg);

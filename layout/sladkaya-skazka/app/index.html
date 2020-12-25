@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Сладкая сказка</title>
 	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="assets/css/main.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script defer src="assets/js/script.js"></script>
 </head>
 <body>
@@ -21,24 +23,24 @@
 						<a class="logo image-block" href="#">
 							<img src="assets/img/logo.svg" alt="logo">
 						</a>
-						<nav class="header__menu menu">
-							<ul class="header__menu-list menu-list">
-								<li class="header__menu-list-item menu-list-item">
+						<nav class="header__menu menu invisible">
+							<ul class="header__menu-list menu__list">
+								<li class="header__menu-list-item menu__list-item">
 									<a href="#">
 										О компании
 									</a>
 								</li>
-								<li class="header__menu-list-item menu-list-item">
+								<li class="header__menu-list-item menu__list-item">
 									<a href="#">
 										Каталог
 									</a>
 								</li>
-								<li class="header__menu-list-item menu-list-item">
+								<li class="header__menu-list-item menu__list-item">
 									<a href="#">
 										Партнёрам
 									</a>
 								</li>
-								<li class="header__menu-list-item menu-list-item">
+								<li class="header__menu-list-item menu__list-item">
 									<a href="#">
 										Контакты
 									</a>
@@ -116,10 +118,11 @@
 								      	Развернуть весь список
 								      </a>
 									</div>
-									<div class="page__slider-wrapper">
-										<div class="page__slide">
+									<div class="swiper-container brands-container">
+										<div id="brands" class="page__slider-wrapper swiper-wrapper">
 											
-								      </div>
+										</div>
+										<div class="swiper-pagination brands-pagination"></div>
 									</div>
 								</div>
 							</div>
@@ -133,150 +136,39 @@
 								      	Развернуть весь список
 								      </a>
 									</div>
-									<div class="page__slider-wrapper">
-										<div class="page__slide">
-									
-								      </div>
+									<div class="swiper-container licenses-container">
+										<div id="licenses" class="page__slider-wrapper swiper-wrapper	">
+											
+										</div>
+										<!-- <div class="swiper-pagination licenses-pagination"></div> -->
 									</div>
 								</div>
 							</div>
 							</div>
 							<ul class="page__card-list card-list">
-								<li class="page__card card">
-									<a href="#">
-										<div class="card__wrapper">
-											<div class="card__image-block image-block">
-												<img src="assets/img/card-images/1.png" alt="card-image">
-											</div>
-											<div class="card__text">
-												<span class="card__desc">Чехия</span>
-											   <span class="card__caption">
-											   	Тайная жизнь домашних животных
-											   </span>
-											   <p class="card__description">
-											   	жевательная резинка шарики
-													со вкусами клубники и банана
-											   </p>
-											</div>
-											<div class="card__footer">
-												<span>
-													<img src="assets/img/icons/cube.svg" alt="">
-													30 г.
-												</span>
-												<span>СС-4-2</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li class="page__card card">
-									<a href="#">
-										<div class="card__wrapper">
-											<div class="card__image-block image-block">
-												<img src="assets/img/card-images/2.png" alt="card-image">
-											</div>
-											<div class="card__text">
-												<span class="card__desc">Чехия</span>
-											   <span class="card__caption">
-											   	Тайная жизнь домашних животных
-											   </span>
-											   <p class="card__description">
-											   	жевательная резинка шарики
-													со вкусами клубники и банана
-											   </p>
-											</div>
-											<div class="card__footer">
-												<span>
-													<img src="assets/img/icons/cube.svg" alt="">
-													30 г.
-												</span>
-												<span>СС-4-2</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li class="page__card card">
-									<a href="#">
-										<div class="card__wrapper">
-											<div class="card__image-block image-block">
-												<img src="assets/img/card-images/1.png" alt="card-image">
-											</div>
-											<div class="card__text">
-												<span class="card__desc">Чехия</span>
-											   <span class="card__caption">
-											   	Тайная жизнь домашних животных
-											   </span>
-											   <p class="card__description">
-											   	жевательная резинка шарики
-													со вкусами клубники и банана
-											   </p>
-											</div>
-											<div class="card__footer">
-												<span>
-													<img src="assets/img/icons/cube.svg" alt="">
-													30 г.
-												</span>
-												<span>СС-4-2</span>
-											</div>
-										</div>
-									</a>
-								</li>
-								<li class="page__card card">
-									<a href="#">
-										<div class="card__wrapper">
-											<div class="card__image-block image-block">
-												<img src="assets/img/card-images/1.png" alt="card-image">
-											</div>
-											<div class="card__text">
-												<span class="card__desc">Чехия</span>
-											   <span class="card__caption">
-											   	Тайная жизнь домашних животных
-											   </span>
-											   <p class="card__description">
-											   	жевательная резинка шарики
-													со вкусами клубники и банана
-											   </p>
-											</div>
-											<div class="card__footer">
-												<span>
-													<img src="assets/img/icons/cube.svg" alt="">
-													30 г.
-												</span>
-												<span>СС-4-2</span>
-											</div>
-										</div>
-									</a>
-								</li>
+
 							</ul>
 							<div class="page__row page__footer">
 								<ul class="page__pagination pagination">
-									<li class="pagination__item">
-										<a class="pagination__item-link" href="#">
-											01
-										</a>
-									</li>
-									<li class="pagination__item">
-										<a class="pagination__item-link" href="#">
-											02
-										</a>
-									</li>
+									
 								</ul>
 								<div class="page__dropdown">
 									<a class="page__dropdown-trigger" href="#">
 										Показать по
-										<span id="product-count">12</span>
+										<span id="product-count"></span>
 										продуктов
 									</a>
 									<ul class="page__select invisible">
-										<li class="page__select-option" data-product-count="">
+										<li class="page__select-option" data-cards-count="12">
 											Показать по 12 продуктов
 										</li>
-										<li class="page__select-option" data-product-count="">
+										<li class="page__select-option" data-cards-count="24">
 											Показать по 24 продуктов
 										</li>
-										<li class="page__select-option" data-product-count="">
+										<li class="page__select-option" data-cards-count="48">
 											Показать по 48 продуктов
 										</li>
-										<li class="page__select-option" data-product-count="">
+										<li class="page__select-option" data-cards-count="64">
 											Показать по 64 продуктов
 										</li>
 									</ul>

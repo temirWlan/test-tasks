@@ -1,0 +1,276 @@
+{
+	"cardSlides": {
+		"brands": [
+			{
+				"imgSrc": "assets/img/slider-images/brands/1.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/2.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/3.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/4.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/5.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/6.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/7.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/8.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/9.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/10.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/11.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/12.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/13.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/14.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/15.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/16.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/17.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/18.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/19.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/20.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/21.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/22.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/23.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/brands/24.jpg", 
+				"alt": "slider-image"
+			}
+		],
+		"licenses": [
+			{
+				"imgSrc": "assets/img/slider-images/licenses/1.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/licenses/2.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/licenses/3.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/licenses/1.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/licenses/2.jpg", 
+				"alt": "slider-image"
+			},
+			{
+				"imgSrc": "assets/img/slider-images/licenses/3.jpg", 
+				"alt": "slider-image"
+			}
+		]
+	},
+	"cards": {
+		"sweetPops": [
+			{
+				"title": "Тайная жизнь домашних животных",
+				"description": "жевательная резинка шарики со вкусами клубники и банана",
+				"imgSrc": "assets/img/card-images/1.png",
+				"country": "Чехия",
+				"year": "192",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "БОБС леденцы микс мята эвкалипт, малиновый чай",
+				"description": "Леденцы микс мята эвкалипт, малиновый чай",
+				"imgSrc": "assets/img/card-images/2.png",
+				"country": "Чехия",
+				"year": "30",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "BARBIE карамель в виде сердца куклой",
+				"description": "",
+				"imgSrc": "assets/img/card-images/3.png",
+				"country": "Россия",
+				"year": "20",
+				"productCode": "SS-13-1"
+			},
+			{
+				"title": "HAPPY BOX КОРОБКА СЛАДОСТЕЙ ЩЕНЯЧИЙ ПАТРУЛЬ",
+				"description": "",
+				"imgSrc": "assets/img/card-images/4.png",
+				"country": "Чехия",
+				"year": "192",
+				"productCode": "HB-8-1"
+			},
+			{
+				"title": "ТРОЛЛИ сладкие кукурузные палочки",
+				"description": "",
+				"imgSrc": "assets/img/card-images/5.png",
+				"country": "Чехия",
+				"year": "30",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "MEGA SECRET GORJUSS",
+				"description": "шоколадные яйца с игрушкой",
+				"imgSrc": "assets/img/card-images/6.png",
+				"country": "Россия",
+				"year": "20",
+				"productCode": "SS-13-1"
+			},
+			{
+				"title": "Minions воздушный зефир для какао и десертов",
+				"description": "",
+				"imgSrc": "assets/img/card-images/7.png",
+				"country": "Чехия",
+				"year": "30",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "БАРБОСКИНЫ воздушный зефир для десертов",
+				"description": "",
+				"imgSrc": "assets/img/card-images/8.png",
+				"country": "Россия",
+				"year": "30",
+				"productCode": ""
+			},
+			{
+				"title": "ЧЕРЕПАШКИ НИНДЗЯ",
+				"description": "игрушка-хлопушка с карамелью на палочке",
+				"imgSrc": "assets/img/card-images/9.png",
+				"country": "Чехия",
+				"year": "30",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "Тайная жизнь домашних животных",
+				"description": "жевательная резинка шарики со вкусами клубники и банана",
+				"imgSrc": "assets/img/card-images/1.png",
+				"country": "Чехия",
+				"year": "192",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "БОБС леденцы микс мята эвкалипт, малиновый чай",
+				"description": "Леденцы микс мята эвкалипт, малиновый чай",
+				"imgSrc": "assets/img/card-images/2.png",
+				"country": "Чехия",
+				"year": "30",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "BARBIE карамель в виде сердца куклой",
+				"description": "",
+				"imgSrc": "assets/img/card-images/3.png",
+				"country": "Россия",
+				"year": "20",
+				"productCode": "SS-13-1"
+			},
+			{
+				"title": "HAPPY BOX КОРОБКА СЛАДОСТЕЙ ЩЕНЯЧИЙ ПАТРУЛЬ",
+				"description": "",
+				"imgSrc": "assets/img/card-images/4.png",
+				"country": "Чехия",
+				"year": "192",
+				"productCode": "HB-8-1"
+			},
+			{
+				"title": "ТРОЛЛИ сладкие кукурузные палочки",
+				"description": "",
+				"imgSrc": "assets/img/card-images/5.png",
+				"country": "Чехия",
+				"year": "30",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "MEGA SECRET GORJUSS",
+				"description": "шоколадные яйца с игрушкой",
+				"imgSrc": "assets/img/card-images/6.png",
+				"country": "Россия",
+				"year": "20",
+				"productCode": "SS-13-1"
+			},
+			{
+				"title": "Minions воздушный зефир для какао и десертов",
+				"description": "",
+				"imgSrc": "assets/img/card-images/7.png",
+				"country": "Чехия",
+				"year": "30",
+				"productCode": "СС-4-2"
+			},
+			{
+				"title": "БАРБОСКИНЫ воздушный зефир для десертов",
+				"description": "",
+				"imgSrc": "assets/img/card-images/8.png",
+				"country": "Россия",
+				"year": "30",
+				"productCode": ""
+			},
+			{
+				"title": "ЧЕРЕПАШКИ НИНДЗЯ",
+				"description": "игрушка-хлопушка с карамелью на палочке",
+				"imgSrc": "assets/img/card-images/9.png",
+				"country": "Чехия",
+				"year": "30",
+				"productCode": "СС-4-2"
+			}
+		]
+	}
+}
