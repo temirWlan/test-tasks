@@ -1,0 +1,14 @@
+.row {
+	@include flex;
+}
+
+.column {
+	@include flex($justify: flex-start, $direction: column);
+}
+
+.image-block {
+	& img {
+		width: 100%;
+		height: 100%;
+	}
+}

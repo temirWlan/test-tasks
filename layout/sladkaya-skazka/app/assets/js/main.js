@@ -20,7 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
 	!storage.get('state') && storage.set('state', initialState);
 
 	// menu
-	toggleMenu('.burger', '.header__menu', 'flex-visible', 'invisible');
+	if (document.body.offsetWidth <= 992) {
+		toggleMenu('.burger', '.header__menu', 'flex-visible', 'invisible');
+	}
 	
 	// slider
 	showSlides('.brands-container', '#brands', data.cardSlides.brands);

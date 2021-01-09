@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Target Indicator Demo</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.min.css">
+	<script defer src="assets/js/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="widget">
+			<div class="widget__wrapper column">
+				<div class="widget__header">
+					<h4 class="widget__title">
+						Target Indicator Demo
+					</h4>
+				</div>	
+				<div class="widget__body">
+					<div class="widget__content">	
+						<div class="widget__row row">
+							<h5 class="widget__caption">Reached:</h5>
+							<div class="widget__slider slider row">
+								<div class="widget__slider-control slider__control column">
+									<input class="widget__slider-input slider__input" type="range" min="0" max="15" value="0">
+									<div class="widget__slider-btn slider__btn">
+										<span id="current">$0</span>
+									</div>
+								</div>
+								<div class="widget__box column">
+									<span class="widget__box-caption">Target</span>
+									<hr/>
+									<span class="widget__box-desc" id="total">
+										$15
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="widget__row row">
+							<div class="widget__image-block image-block">
+								<img src="assets/img/icons/info-btn.svg" alt="tip">
+							</div>
+							<p class="widget__tip">
+								You need $<span id="remainder">1</span> more to reach your target
+							</p>
+						</div>
+					</div>
+				</div>		
+			</div>	
+		</div>
+	</div>
+</body>
+</html>
